@@ -5,7 +5,15 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
+gem 'bootstrap-sass'
+# autoprefixer recommended at launchschool.com/blog/integrating-rails-and-bootstrap-part-1
+gem 'autoprefixer-rails'
+gem 'font-awesome-rails'
+gem 'jquery-rails'
+gem 'pry-rails'
+gem 'better_errors', group: :development #use only in development
+gem 'binding_of_caller' #works with better errors to see 
+						#instance variable values
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'
 # Use sqlite3 as the database for Active Record
@@ -28,8 +36,8 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-gem 'bcrypt', '~> 3.1.7'
+ gem 'bcrypt', '~> 3.1.11'
+# gem 'bcrypt-ruby', '~> 3.1.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
