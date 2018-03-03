@@ -1,4 +1,5 @@
 class SubjectsController < ApplicationController
-	def show
+	def show_all
+		@subjects = Subject.all
 	end
 end

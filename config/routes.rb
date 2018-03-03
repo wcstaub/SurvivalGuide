@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :subjects
-  root 'ssubjects#show'
+  root 'subjects#show_all'
   get 'signup' => 'users#new'
   get 'login' => 'sessions#new'
   get 'logout' => 'sessions#destroy'
