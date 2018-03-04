@@ -1,5 +1,16 @@
 class SubjectsController < ApplicationController
-	def show_all
+	def get_all
 		@subjects = Subject.all
+	end
+
+	def show_puzzle
+		get_all
+	end
+
+	def show_list
+		get_all
+	end
+
+	def show_resources
 	end
 end

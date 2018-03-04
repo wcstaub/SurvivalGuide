@@ -1,0 +1,20 @@
+
+<div class= "container overlay">
+	<h2>All Subjects</h2><br><br>
+	<% Subject.all.each do |s| %>
+ 		<div class="row">
+  		<div class="col-sm-4">
+  			<%= image_tag(s.icon, class: "img-responsive icon") %>
+  		</div>
+  		<div class="col-sm-2>
+  			 <%= s.name %> 
+  		</div>
+  		<div class="col-sm-6">
+  			  <%= s.description %>
+  		</div>
+  	</div>
+  	<br><br><br>
+ 	<% end %>	
+</div>	
+
+ 

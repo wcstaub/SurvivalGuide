@@ -1,7 +1,9 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   # before_action :authorize, only: [:edit, :update]
-
+  def about
+  end
+  
   private
 	# See if @current_user is nil or not. If it has some value, leave it alone.
 	# Else, get the current user from the session using the user id. 
