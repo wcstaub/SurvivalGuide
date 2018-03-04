@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get 'signup' => 'users#new'
   get 'login' => 'sessions#new'
   get 'logout' => 'sessions#destroy'
-  get 'about' => 'application#about'
+  get 'about' => 'sessions#about'
 
   resources :users
   resources :sessions

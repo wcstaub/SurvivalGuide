@@ -26,11 +26,11 @@
         </div>
         <div class="collapse navbar-collapse navbar-menubuilder">
             <ul class="nav navbar-nav navbar-left">
-              <li class="<%= 'active' if (params[:controller] == 'subjects') and (params[:action] == 'show_list') %>"> <%= link_to "Subjects", show_list_path%>
+              <li class="<%= 'active' if controller.controller_name == 'subjects' %>"> <%= link_to "Subjects", show_list_path%>
               </li>  
-              <li class="<%= 'active' if (params[:controller] == 'subjects') and (params[:action] == 'show_resources') %>"> <%= link_to "Resources", show_resources_path%>
+              <li class="<%= 'active' if controller.controller_name == 'resources' %>"> <%= link_to "Resources", show_resources_path%>
               </li> 
-              <li class="<%= 'active' if params[:controller] == 'application' %>"> <%= link_to "About", about_path%>
+              <li class="<%= 'active' if controller.controller_name == 'sessions' %>"> <%= link_to "About", about_path%>
               </li> 
             </ul>
             <ul class="nav navbar-nav navbar-right">
