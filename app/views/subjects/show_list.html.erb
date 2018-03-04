@@ -1,15 +1,20 @@
-
+<p> <%= controller.controller_name%>:show_puzzle</p>
 <div class= "container overlay">
-	<h2>All Subjects</h2><br><br>
+	<div class="row">
+  	<div class="col-sm-3">
+			<h2>All Subjects</h2>
+		</div>
+	</div>
+	<br><br>
 	<% Subject.all.each do |s| %>
  		<div class="row">
-  		<div class="col-sm-4">
+  		<div class="col-sm-2">
   			<%= image_tag(s.icon, class: "img-responsive icon") %>
   		</div>
-  		<div class="col-sm-2>
+  		<div class="col-sm-2">
   			 <%= s.name %> 
   		</div>
-  		<div class="col-sm-6">
+  		<div class="col-sm-8">
   			  <%= s.description %>
   		</div>
   	</div>
