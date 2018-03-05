@@ -20,7 +20,18 @@
 
 .overlay {
       color: white;
-      background: rgba(0,0,0,0.5);
+      background: rgba(215, 221, 229, 0.1);
+     // background: rgba( 39, 40, 42, 0.8);
+    // background: rgba(0,0,0,0.5);
+}
+
+.bar{
+    color: white;
+}
+
+.logo {
+    height: 84px;
+    width: 108px;
 }
 
 .icon {
@@ -41,8 +52,10 @@
      overflow-x: hidden;
 }
 
-.galindo {
+.welcome_msg {
     font-family: 'galindo', cursive;
+    // color: rgba(109, 153, 8, 1);
+    color: rgba(247, 144, 40, 1);
 }
 
 .puzzle{

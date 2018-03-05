@@ -1,14 +1,14 @@
 Rails.application.routes.draw do
 
-  
-  root 'subjects#show_puzzle'
+  root 'welcome#index'
+  get  'welcome' => 'welcome#index'
   get 'show_puzzle' => 'subjects#show_puzzle'
   get 'show_list' => 'subjects#show_list'
   get 'show_resources' => 'subjects#show_resources'
   get 'signup' => 'users#new'
   get 'login' => 'sessions#new'
   get 'logout' => 'sessions#destroy'
-  get 'about' => 'sessions#about'
+  get 'about' => 'welcome#about'
 
   resources :subjects
   resources :users
