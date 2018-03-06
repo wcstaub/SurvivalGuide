@@ -1,4 +1,8 @@
 class SubjectsController < ApplicationController
+	def new
+		@subject = Subject.new
+	end
+
 	def get_all
 		@subjects = Subject.all
 	end

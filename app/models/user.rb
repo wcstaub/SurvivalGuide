@@ -5,5 +5,5 @@ class User < ApplicationRecord
 	# How does pass-word_conformation get in here - it's not an attribute
 	
 	validates_uniqueness_of :email
-
+	serialize :comments
 end

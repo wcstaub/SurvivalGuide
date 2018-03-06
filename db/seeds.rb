@@ -20,3 +20,15 @@ subjects = Subject.create([
 	{name: "RubyGems", icon: "gems.png", description: "Package manager for Ruby providing a standard format for distributing, installing and managing Ruby libraries (gems)"},
 	{name: "APIs", icon: "api.png", description: "Application Programming Interface, a set of clearly defined methods of communication between software components used to build application software"}
 	])
+
+Subject.all.each do |s|
+	12.times do
+		r = Resource.create(
+			name: Faker::Resource.name,
+			url: Faker::Resource.url,
+			type: Faker::Resource.type,
+			description: Faker::Resource.description,
+			rank: Faker::Resource.rank,
+			)
+	end
+end
