@@ -1,0 +1,17 @@
+<!-- views/resources/show_list.html.erb -->
+<p> <%= controller.controller_name%>:show_list</p>
+<div class= "container overlay">
+	<div class="row">
+  	<div class="col-sm-3">
+			<h2>All Resources</h2>
+		</div>
+	</div>
+	<br><br>
+	<% Resource.all.each do |r| %>
+    <div class="row">
+  		<div class="col-sm-8">
+  			  <%= link_to r.url, r.url %>
+  		</div>
+  	</div>
+ 	<% end %>	
+</div>

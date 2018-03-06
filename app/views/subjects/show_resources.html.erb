@@ -1,3 +1,22 @@
-<h2>Show Resources</h2>
+<!-- views/subjects/show_resources.html.erb -->
+<p> <%= controller.controller_name%>:show_resources</p>
+<div class= "container overlay">
+	<div class="row">
+		<div class="col-sm-3">
+			<h2><%= image_tag(@current_subject.icon, class: "img-responsive icon") %>: All Resources</h2>
+		</div>
+	</div>
+	<br><br>
+
+	<% if  @current_subject.resources %>
+		<% @currrent_subject.resources do |r| %>
+		    <div class="row">
+		  			<%=link_to Resource.find(r).url Resource.find(r).url %>
+		   	</div>
+		<% end %>
+	<% end %>	
+</div>	
+
+
 
 
